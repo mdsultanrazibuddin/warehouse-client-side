@@ -1,6 +1,9 @@
 import React from 'react';
 import { Button, Form } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import SocialLogIn from '../SocialLogIn/SocialLogIn';
+
+
 import './SignIn.css'
 
 const SignIn = () => {
@@ -60,7 +63,7 @@ const SignIn = () => {
             </div>
 
           </Form>
-          {/* <SocialLogin></SocialLogin> */}
+          <SocialLogIn></SocialLogIn>
     </div>
     );
 };
