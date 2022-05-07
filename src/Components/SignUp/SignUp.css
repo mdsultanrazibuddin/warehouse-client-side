@@ -1,0 +1,26 @@
+.form-container{
+    font-family: Manrope;
+    font-weight: 700;
+}
+
+.form-container h1{
+    font-weight: 700;
+}
+
+.sign-up-container{
+    width: 50%;
+}
+.register{
+    color: rgb(67,150,220);
+}
+.button{
+    background-color: rgb(67,150,220); 
+    color: white;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 768px){
+    .sign-up-container{
+        width: 90% !important;
+    }
+}
