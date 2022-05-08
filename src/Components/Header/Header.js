@@ -25,7 +25,13 @@ const Header = () => {
         <Nav.Link className='header-button'  as ={Link} to = {'/product'} href="#product">Product</Nav.Link>
        
        
-        {/* <Nav.Link className='header-button'  as ={Link} to = {'/signup'} href="#signup">Sign Up</Nav.Link> */}
+        
+        {
+            user && <>
+            <Nav.Link className='header-button'  as ={Link} to = {'/AddProduct'} href="#signup">Add</Nav.Link>
+        <Nav.Link className='header-button'  as ={Link} to = {'/ManageProduct'} href="#signup">Manage</Nav.Link>
+            </>
+        }
 
         {  
          user ?

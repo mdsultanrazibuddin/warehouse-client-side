@@ -10,9 +10,10 @@ import Product from './Components/Product/Product';
 import SignIn from './Components/SignIn/SignIn';
 import SignUp from './Components/SignUp/SignUp';
 import RequireAuth from './Components/RequireAuth/RequireAuth'
-import OrderNow from './Components/OrderNow/OrderNow'
+
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import AddProduct from './Components/AddProduct/AddProduct';
+import ManageProduct from './Components/ManageProduct/ManageProduct';
 
 function App() {
   return (
@@ -22,11 +23,17 @@ function App() {
      <Route path="/" element={ <Home/>} />
      <Route path="/Product" element={ <Product/>} />
      <Route path="/ProductDetails" element={ <ProductDetails/>} />
-     <Route path="/AddProduct" element={ <AddProduct/>} />
     
-     <Route path="OrderNow" element={
+     
+    
+     <Route path="/ManageProduct" element={
         <RequireAuth>
-            <OrderNow/>
+            <ManageProduct/>
+        </RequireAuth>
+     } />
+     <Route path="/AddProduct" element={
+        <RequireAuth>
+           <AddProduct/>
         </RequireAuth>
      } />
      
