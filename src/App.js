@@ -14,6 +14,7 @@ import RequireAuth from './Components/RequireAuth/RequireAuth'
 import ProductDetails from './Components/ProductDetails/ProductDetails';
 import AddProduct from './Components/AddProduct/AddProduct';
 import ManageProduct from './Components/ManageProduct/ManageProduct';
+import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -46,6 +47,8 @@ function App() {
      
      <Route path="*" element={<NotFound/>} />
      </Routes>
+
+     <Footer/>
     </div>
   );
 }
