@@ -1,0 +1,34 @@
+.service-container{
+   
+    display: inline-block;
+  
+    font-family: Manrope;
+}
+.service-container h4{
+    font-weight: 700;
+}
+.service-container h6{
+    font-weight: 700;
+}
+.productCard{
+    
+    transition: transform .5s, box-shadow .5s;
+}
+
+.service-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.product-img{
+    width: 80%;
+    height: 200px;
+   
+}
+.Button-title{
+    background-color: rgb(67,150,220); 
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+
+}

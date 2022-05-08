@@ -1,0 +1,16 @@
+.Header-Title{
+    
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+}
+.nav-button{
+    margin: auto;
+}
+.header-button{
+    
+    font-size: 20px;
+    
+    font-weight: 200;
+    margin-left: 40px;
+}

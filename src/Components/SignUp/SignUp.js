@@ -32,12 +32,11 @@ const SignUp = () => {
   }
 
   const handleCreateUser = event =>{
-    console.log(email, password);
    
-    
     createUserWithEmailAndPassword(email, password)
   
-  event.preventDefault();
+    event.preventDefault();
+    
     if(password !== confirmPassword){
       setError('your two password did not match')
       return;

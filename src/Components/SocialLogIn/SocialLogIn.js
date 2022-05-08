@@ -41,7 +41,7 @@ const SocialLogIn = () => {
             className="d-block mx-auto mx-0 google-btn"
           >
               <img className="img" src={image} alt="" srcset="" />
-            Continue with Google
+            Sign In with Google
           </button>
         </div>
        
