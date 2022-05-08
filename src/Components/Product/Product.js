@@ -1,5 +1,6 @@
 
-import React, { useEffect, useState } from 'react';
+import React from 'react';
+import useProduct from '../Hooks/useProduct';
 import Products from '../Products/Products';
 
 
@@ -7,13 +8,7 @@ import Products from '../Products/Products';
 
 import './Product.css'
 const Product = () => {
-  const[product, setProduct] = useState([])
-  useEffect(() => {
-    fetch('http://localhost:5000/product')
-        .then(response => response.json())
-        .then(data => setProduct(data))
-        
-}, []);
+ const [product] = useProduct();
   
 
   
