@@ -14,8 +14,11 @@ const Product = () => {
   
  
     return (
+
       
       <div>
+
+         <h1 className='mt-5 text-center'>Our Products</h1>
         {
                     product.map(product => <Products
                         key = {product._id} 
