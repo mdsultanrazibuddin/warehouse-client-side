@@ -1,5 +1,7 @@
 import React from 'react';
+
 import useProduct from '../Hooks/useProduct';
+import './ManageProduct.css'
 
 const ManageProduct = () => {
     const [product, setProduct] = useProduct();
@@ -18,15 +20,20 @@ const ManageProduct = () => {
     }
     return (
         <div className='w-50 mx-auto'>
+
+            <h1 className='text-center mt-5 mb-5'>All Products</h1>
            
 
+            <div>
             {
                 product.map(product => <div key ={product._id}>
-                    <h6>{product.name} <button onClick={() => handleDelete(product._id) }>x</button></h6>
+                    <li className='product-name'>{product.name} <button className='remove' onClick={() => handleDelete(product._id) }>Delete</button></li>
 
 
                 </div>)
             }
+            </div>
+           
         </div>
     );
 };

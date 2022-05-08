@@ -15,6 +15,8 @@ import ProductDetails from './Components/ProductDetails/ProductDetails';
 import AddProduct from './Components/AddProduct/AddProduct';
 import ManageProduct from './Components/ManageProduct/ManageProduct';
 import Footer from './Components/Footer/Footer';
+import MyItem from './Components/MyItem/MyItem';
+import Blog from './Components/Blog/Blog';
 
 function App() {
   return (
@@ -37,10 +39,16 @@ function App() {
            <AddProduct/>
         </RequireAuth>
      } />
+     <Route path="/MyItem" element={
+        <RequireAuth>
+           <MyItem/>
+        </RequireAuth>
+     } />
      
      
-     <Route path="SignUp" element={<SignUp/>} />
-     <Route path="SignIn" element={<SignIn/>} />
+     <Route path="/SignUp" element={<SignUp/>} />
+     <Route path="/SignIn" element={<SignIn/>} />
+     <Route path="/Blog" element={<Blog/>} />
     
      
     

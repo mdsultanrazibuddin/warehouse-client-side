@@ -23,6 +23,7 @@ const Header = () => {
         
         <Nav.Link className='header-button'    as ={Link} to = {'/'} href="#home">Home</Nav.Link>
         <Nav.Link className='header-button'  as ={Link} to = {'/product'} href="#product">Inventory</Nav.Link>
+        <Nav.Link className='header-button'  as ={Link} to = {'/Blog'} href="#product">Blog</Nav.Link>
        
        
         
@@ -30,6 +31,7 @@ const Header = () => {
             user && <>
             <Nav.Link className='header-button'  as ={Link} to = {'/AddProduct'} href="#signup">Add</Nav.Link>
         <Nav.Link className='header-button'  as ={Link} to = {'/ManageProduct'} href="#signup">Manage</Nav.Link>
+        <Nav.Link className='header-button'  as ={Link} to = {'/MyItem'} href="#signup">My-Items</Nav.Link>
             </>
         }
 

@@ -1,0 +1,18 @@
+.remove{
+    border: none;
+    background-color: rgb(17, 1, 1);
+    height: 30px;
+    color: rgb(235, 52, 52);
+    font-size: 15px;
+    font-weight: 400;
+    display: block;
+    margin-left: 90px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   border-radius: 5px;
+    
+}
+.product-name{
+    font-size: 20px;
+    font-weight: 700;
+}
