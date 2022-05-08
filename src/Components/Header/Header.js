@@ -22,7 +22,7 @@ const Header = () => {
     <Nav className=" navbar me-auto nav-button">
         
         <Nav.Link className='header-button'    as ={Link} to = {'/'} href="#home">Home</Nav.Link>
-        <Nav.Link className='header-button'  as ={Link} to = {'/product'} href="#product">Product</Nav.Link>
+        <Nav.Link className='header-button'  as ={Link} to = {'/product'} href="#product">Inventory</Nav.Link>
        
        
         

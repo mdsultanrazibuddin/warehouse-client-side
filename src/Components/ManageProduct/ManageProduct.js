@@ -22,7 +22,7 @@ const ManageProduct = () => {
 
             {
                 product.map(product => <div key ={product._id}>
-                    <h6>{product.name} <button onClick={() => handleDelete() }>x</button></h6>
+                    <h6>{product.name} <button onClick={() => handleDelete(product._id) }>x</button></h6>
 
 
                 </div>)

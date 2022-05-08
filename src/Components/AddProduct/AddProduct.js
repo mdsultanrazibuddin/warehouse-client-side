@@ -20,6 +20,7 @@ const AddProduct = () => {
   }
     return (
         <div className='w-50 mx-auto'>
+            <h1>Add Product Item</h1>
              <form className='d-flex flex-column' onSubmit={handleSubmit(onSubmit)}>
       <input className='mb-2'  placeholder='Name' {...register("name", { required: true, maxLength: 20 })} />
       <textarea className='mb-2' placeholder='Description' {...register("description")} />
