@@ -1,6 +1,6 @@
 
 import React, { useEffect, useState } from 'react';
-import useProduct from '../Hooks/useProduct';
+
 import Products from '../Products/Products';
 
 
@@ -8,10 +8,19 @@ import Products from '../Products/Products';
 
 import './Product.css'
 const Product = () => {
- const [product] = useProduct();
+ 
  
     const [pageCount, setPageCount] = useState(0);
     const [page, setPage] = useState(0);
+    const [size] = useState(6)
+     const[product, setProduct] = useState([])
+    useEffect(() => {
+      fetch(`http://localhost:5000/product?page=${page}&size=${size}`)
+          .then(response => response.json())
+          .then(data => setProduct(data))
+          
+  }, [page, size] );
+  
     useEffect(() =>{
         fetch('http://localhost:5000/productCount')
         .then(res =>res.json())
