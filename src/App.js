@@ -18,6 +18,7 @@ import Footer from './Components/Footer/Footer';
 import MyItem from './Components/MyItem/MyItem';
 import Blog from './Components/Blog/Blog';
 import SpecialProduct from './Components/SpecialProduct/SpecialProduct';
+import Bonus from './Components/Bonus/Bonus';
 
 function App() {
   return (
@@ -56,6 +57,7 @@ function App() {
      <Route path="/SignUp" element={<SignUp/>} />
      <Route path="/SignIn" element={<SignIn/>} />
      <Route path="/Blog" element={<Blog/>} />
+     <Route path="/Bonus" element={<Bonus/>} />
     
      
     

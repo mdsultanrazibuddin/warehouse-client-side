@@ -14,12 +14,12 @@ const Header = () => {
     }
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='navb'>
   <Container>
   <Navbar.Brand className='fs-1 fw-bold' >Book Store</Navbar.Brand>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className=" navbar me-auto nav-button">
+    <Nav className=" navbar me-auto nav-button TEXT-Title">
         
         <Nav.Link className='header-button'    as ={Link} to = {'/'} href="#home">Home</Nav.Link>
         <Nav.Link className='header-button'  as ={Link} to = {'/product'} href="#product">Inventory</Nav.Link>

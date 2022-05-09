@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import SpecialProducts from '../SpecialProducts/SpecialProducts';
+import './SpecialProduct.css'
 
 const SpecialProduct = () => {
     const[product, setProduct] = useState([])
@@ -11,7 +12,7 @@ const SpecialProduct = () => {
     }, []);
     return (
         <div>
-            <h1 className='text-center'>Special product</h1>
+            <h1 className='text-center TEXT-Title'>Special products</h1>
 
             <div>
              

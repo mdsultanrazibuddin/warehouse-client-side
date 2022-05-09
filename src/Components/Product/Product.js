@@ -39,7 +39,7 @@ const Product = () => {
       
       <div>
         <div>
-             <h1 className='mt-5 text-center'>Our Products</h1>
+             <h1 className='mt-5 text-center TEXT-Title'>Top Products</h1>
               {
                     product.map(product => <Products
                         key = {product._id} 

@@ -50,9 +50,9 @@ const SignUp = () => {
         <div>
           <div className="conatiner mx-auto my-5 sign-up-container">
              <Form  onSubmit={handleCreateUser}  className="form-container">
-                 <h1 className="text-center register">Register</h1>
+                 <h1 className="text-center register TEXT-Title">Register</h1>
                         
-                  <Form.Group className="mb-3" controlId="formBasicEmail">
+                  <Form.Group className="mb-3 TEXT-Title" controlId="formBasicEmail">
                             <Form.Label>Email address</Form.Label>
                             <Form.Control
                               onBlur = {handleEmailBlur} 
@@ -63,7 +63,7 @@ const SignUp = () => {
                           
                   </Form.Group>
 
-                  <Form.Group className="mb-3" controlId="password">
+                  <Form.Group className="mb-3 TEXT-Title" controlId="password">
                             <Form.Label>Password</Form.Label>
                             <Form.Control
                             onBlur={ handlePasswordBlur}
@@ -74,7 +74,7 @@ const SignUp = () => {
                               required
                             />
                   </Form.Group>
-                  <Form.Group className="mb-3" controlId="formBasicPassword">
+                  <Form.Group className="mb-3 TEXT-Title" controlId="formBasicPassword">
                             <Form.Label>Confirm Password</Form.Label>
                             <Form.Control
                             onBlur={handleConfirmPasswordBlur}
@@ -87,7 +87,7 @@ const SignUp = () => {
                   </Form.Group>
                   <p className="text-danger">{error}</p>
                           
-                  <h6 className="my-3">
+                  <h6 className="my-3 TEXT-Title">
                    Already have an account?
                       <span className="text-primary create-new-account ms-2">
                           <Link className='register form-link' to="/SignIn">Sign In</Link> 
@@ -95,9 +95,9 @@ const SignUp = () => {
                   </h6>
                   <div className=" d-flex justify-content-center   align-items-center">
                        <Button
-                              className=" button px-5"
+                              className=" button px-5 TEXT-Title"
                             
-                              variant="primary"
+                              
                               type="submit"
                             >
                               Sign Up

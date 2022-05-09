@@ -61,9 +61,9 @@ const SignIn = () => {
         <div className="mx-auto mt-5 login-container">
       
       <Form  onSubmit={handleLogin}   className="form-container">
-            <h1 className="text-center register">Sign In</h1>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Email address</Form.Label>
+            <h1 className="text-center register TEXT-Title">Sign In</h1>
+            <Form.Group className="mb-3 TEXT-Title" controlId="formBasicEmail">
+              <Form.Label >Email address</Form.Label>
               <Form.Control
                  onBlur ={ handleEmailBlur}
                 
@@ -74,7 +74,7 @@ const SignIn = () => {
              
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group className="mb-3 TEXT-Title" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
                  onBlur={ handlePasswordBlur}
@@ -87,27 +87,27 @@ const SignIn = () => {
             {errorElement}
             
             <p
-              className=" forget-pass"
+              className=" forget-pass TEXT-Title"
               
             >
-              Forget Password?<button className='btn btn-link text-primary pe-auto text-decoration-none'onClick={async () => {
+              Forget Password?<button className='TEXT-Title btn btn-link text-primary pe-auto text-decoration-none'onClick={async () => {
                await sendPasswordResetEmail(email);
           alert('Sent email');
         }}>Reset your password</button>
             </p>
 
-            <h6>
+            <h6 className='TEXT-Title'>
               New to Book Store ?{" "}
               <span
                
                 className="text-primary create-new-account"
               >
-               <Link className='register form-link' to="/signup">Create a new account</Link> 
+               <Link className='register form-link TEXT-Title' to="/signup">Create a new account</Link> 
               </span>
             </h6>
 
             <div className="d-flex justify-content-center mt-3 ">
-              <Button className="px-5 button" variant="primary" type="submit">
+              <Button className="px-5 button TEXT-Title" variant="primary" type="submit">
                 Sign In
               </Button>
             </div>
