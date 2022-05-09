@@ -25,10 +25,15 @@ function App() {
       <Routes>
      <Route path="/" element={ <Home/>} />
      <Route path="/Product" element={ <Product/>} />
-     <Route path="/ProductDetails" element={ <ProductDetails/>} />
+     
     
      
     
+     <Route path="/ProductDetails" element={
+        <RequireAuth>
+           { <ProductDetails/>} 
+        </RequireAuth>
+     } />
      <Route path="/ManageProduct" element={
         <RequireAuth>
             <ManageProduct/>

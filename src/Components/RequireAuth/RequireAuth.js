@@ -2,14 +2,16 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Navigate, useLocation } from 'react-router-dom';
 import auth from '../firebase.init';
-// import Loading from '../Loading/Loading';
+import Loading from '../Loading/Loading';
+
 
 const Protect = ({children}) => {
-    const [user] = useAuthState(auth);
+    const [user, loading] = useAuthState(auth);
     const location = useLocation();
-    // if(loading){
-    //     return <Loading/>
-    // }
+    if(loading){
+
+        return <Loading/>
+    }
     if(!user){
         return <Navigate to='/SignIn' state={{ from : location}} replace/>
     }
