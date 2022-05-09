@@ -2,6 +2,7 @@ import React from 'react';
 
 import useProduct from '../Hooks/useProduct';
 import './ManageProduct.css'
+import { MdDeleteForever } from 'react-icons/md';
 
 const ManageProduct = () => {
     const [product, setProduct] = useProduct();
@@ -27,7 +28,7 @@ const ManageProduct = () => {
             <div>
             {
                 product.map(product => <div key ={product._id}>
-                    <li className='product-name'>{product.name} <button className='remove' onClick={() => handleDelete(product._id) }>Delete</button></li>
+                    <li className='product-name'>{product.name} <button className='remove' onClick={() => handleDelete(product._id) }>Delete <MdDeleteForever/></button></li>
 
 
                 </div>)
