@@ -17,6 +17,7 @@ import ManageProduct from './Components/ManageProduct/ManageProduct';
 import Footer from './Components/Footer/Footer';
 import MyItem from './Components/MyItem/MyItem';
 import Blog from './Components/Blog/Blog';
+import SpecialProduct from './Components/SpecialProduct/SpecialProduct';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
       <Routes>
      <Route path="/" element={ <Home/>} />
      <Route path="/Product" element={ <Product/>} />
+     <Route path="/SpecialProduct" element={ <SpecialProduct/>} />
      
     
      
@@ -60,6 +62,7 @@ function App() {
      
      <Route path="*" element={<NotFound/>} />
      </Routes>
+
 
      <Footer/>
     </div>
