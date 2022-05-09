@@ -5,7 +5,7 @@ import './SpecialProduct.css'
 const SpecialProduct = () => {
     const[product, setProduct] = useState([])
     useEffect(() => {
-        fetch('http://localhost:5000/products')
+        fetch('https://immense-shore-38517.herokuapp.com/products')
             .then(response => response.json())
             .then(data => setProduct(data))
             

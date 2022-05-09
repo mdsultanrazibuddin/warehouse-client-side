@@ -15,14 +15,14 @@ const Product = () => {
     const [size] = useState(6)
      const[product, setProduct] = useState([])
     useEffect(() => {
-      fetch(`http://localhost:5000/product?page=${page}&size=${size}`)
+      fetch(`https://immense-shore-38517.herokuapp.com/product?page=${page}&size=${size}`)
           .then(response => response.json())
           .then(data => setProduct(data))
           
   }, [page, size] );
   
     useEffect(() =>{
-        fetch('http://localhost:5000/productCount')
+        fetch('https://immense-shore-38517.herokuapp.com/productCount')
         .then(res =>res.json())
         .then (data =>{
             const count = data.count;

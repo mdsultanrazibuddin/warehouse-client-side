@@ -9,7 +9,7 @@ const ManageProduct = () => {
     const handleDelete = id =>{
         const proceed = window.confirm('Are you Sure');
         if(proceed){
-            const url = `http://localhost:5000/product/${id}`
+            const url = `https://immense-shore-38517.herokuapp.com/product/${id}`
     fetch( url , {method : 'DELETE'})
     .then (res =>res.json())
     .then (data =>{
@@ -22,7 +22,7 @@ const ManageProduct = () => {
     return (
         <div className='w-50 mx-auto'>
 
-            <h1 className='text-center mt-5 mb-5'>All Products</h1>
+            <h1 className='text-center mt-5 mb-5 TEXT-Title'>All Products</h1>
            
 
             <div>
